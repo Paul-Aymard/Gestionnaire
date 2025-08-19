@@ -18,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -63,7 +64,7 @@ fun GestionnaireDeTachesimage(modifier: Modifier) {
                 contentScale = ContentScale.FillWidth
             )
             Text(
-                text = "All tasks completed",
+                text = stringResource(R.string.all_tasks_completed),
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(
                     top = 24.dp,
@@ -72,7 +73,7 @@ fun GestionnaireDeTachesimage(modifier: Modifier) {
             )
 
             Text(
-                text = "Nice work!",
+                text = stringResource(R.string.nice_work),
                 fontSize = 16.sp
             )
         }
